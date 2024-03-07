@@ -37,6 +37,7 @@ body {
     max-width: 800px;
     margin: 50px auto;;
     text-align: justify;
+    min-height: calc(100vh - 218px);
 }
 
 .conteudo {
@@ -301,6 +302,11 @@ body {
 
     .mensagem .mensagem-texto{
         font-size: 38px;
+    }
+
+    .container{
+        margin: 50px 25px;
+        text-align: justify;
     }
 }
 

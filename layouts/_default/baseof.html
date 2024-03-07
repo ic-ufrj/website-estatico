@@ -74,7 +74,30 @@
                     <a href="area-aluno.html" class="link-menu">Área do Aluno</a>
                 </li>
             </ul>
-        </nav>
+        </nav> 
+
+        <div class="menu-toggle" onclick="document.getElementById('menu-mobile').style.display = 'block'">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-icon">&#9776;</label>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <span class="close-btn" onclick="document.getElementById('menu-mobile').style.display = 'none';">X</span>
+            <ul class="item-mobile" style="margin-top: 30px;">
+                <li class="link-mobile"><a href="#">Oportunidades</a>
+                    <ul class="subitem-mobile">
+                        <li><a href="#">Iniciação Científica</a></li>
+                        <li><a href="#">Monitoria</a></li>
+                    </ul>
+                </li>
+                <li class="link-mobile"><a href="#">Extensão</a>
+                    <ul class="subitem-mobile">
+                        <li><a href="#">Projetos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+
     </header>
 
     {{ block "main" . }}

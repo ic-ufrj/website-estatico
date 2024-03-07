@@ -33,6 +33,12 @@ body {
     top: 0;
 }
 
+.container{
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
 .conteudo {
     max-width: 800px;
     margin: 20px auto;
@@ -132,7 +138,6 @@ body {
 .item-menu:hover .submenu {
     display: block;
 }
-
 
 .logoContainer {
     left: 50%;
@@ -279,11 +284,101 @@ body {
         width: auto;
     }
 
-    .mobileLogo{
-        display: block;
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        display: none;
     }
 
     .desktopLogo{
-        display: none;
+        max-width: 180px;
     }
+
+    .mensagem{
+        top: 230px; 
+    }
+
+    .mensagem .mensagem-texto{
+        font-size: 38px;
+    }
+}
+
+.menu-toggle {
+    height: 0px;
+    display: none; /* Por padrão, esconde o menu-toggle */
+}
+
+@media (max-width: 1000px) {
+    .menu-toggle {
+        display: block; /* Mostra o menu-toggle em telas menores que 768px */
+    }
+}
+
+.menu-icon {
+    display: block;
+    position: fixed;
+    top: 1px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+    color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: -4px 0 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.menu-mobile.active {
+    display: block;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-mobile {
+    border-bottom: 1px solid #ccc;
+}
+
+.link-mobile a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sublink-mobile a {
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+.subitem-mobile {
+    display: none;
+    background-color: white;
+}
+
+.subitem-mobile.active {
+    display: block;
 }

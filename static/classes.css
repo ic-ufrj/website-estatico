@@ -413,7 +413,7 @@ body {
     display: flex;
     margin: auto;
     margin-bottom: 40px;
-    background-color: #7f7f7f;
+    background-color: #1c3465;
 }
 
 .ultimas-noticias h2 {
@@ -425,7 +425,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     box-sizing: border-box;
-    color: #7f7f7f;
+    color: #1c3465;
 }
 
 .lista-noticia{

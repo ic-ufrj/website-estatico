@@ -329,6 +329,17 @@ body {
     .menu-toggle {
         display: block; /* Mostra o menu-toggle em telas menores que 768px */
     }
+
+    .lista-noticia{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    
+    .noticia {
+        width: 300px !important;
+        margin: auto !important;
+        margin-bottom: 30px !important;
+        height: 300px !important;
+    }
 }
 
 .menu-icon {
